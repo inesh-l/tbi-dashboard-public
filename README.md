@@ -39,11 +39,7 @@ For more, see <https://observablehq.com/framework/getting-started>.
 ```
 
 ## Preparing data
-To set up this project, original BRFSS/TBI SAS data is needed for years 2016-2022. Place .sas7bdat files in /src/sas and run the sas2csv.py script to automatically set up data for the application.
-
-```
-python src/scripts/sas2csv.py
-```
+The top of each page contains a file input for uploading BRFSS data. Upload the .CSV file corresponding to the page's data year.
 
 ## Setting up Gemini
 Follow the instructions on Google's AI Studio to get an API key, https://aistudio.google.com/apikey. \\
