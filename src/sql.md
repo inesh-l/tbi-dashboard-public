@@ -2,8 +2,6 @@
 theme: dashboard
 title: SQL Input
 toc: false
-sql:
-    brfss: ./data/ohbrfss22.csv
 ---
 
 
