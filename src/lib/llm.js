@@ -10,7 +10,7 @@ export const generateText = async (prompt, apiKey) => {
 
     // Set the system instruction during model initialization
     const model = genAI.getGenerativeModel({
-        model: "gemini-1.5-flash",
+        model: "gemini-2.5-flash",
         systemInstruction: systemPrompt,
     });
 
