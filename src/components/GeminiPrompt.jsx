@@ -1,6 +1,7 @@
 import { generateText } from "../lib/llm.js";
+import { error2019 } from "../data/2019error.js";
 
-export const GeminiPrompt = () => {
+export const GeminiPrompt = ({ year }) => {
 
     // Handles sending the prompt to the API
     const handleSendPrompt = async () => {
@@ -18,8 +19,14 @@ export const GeminiPrompt = () => {
         }
 
         try {
+            // Append the 2019 error message if the year is 2019
+            let finalPrompt = prompt;
+            if (year === "2019" || year === 2019) {
+                finalPrompt = prompt + "\n\nIMPORTANT NOTE: " + error2019;
+            }
+
             // Call the function to generate text with the API key
-            const response = await generateText(prompt, apiKey);
+            const response = await generateText(finalPrompt, apiKey);
 
             // Output the response
             document.getElementById('responseOutput').innerText = 'Response: ' + response;

@@ -1,0 +1,2 @@
+export const error2023 = `This data is from 2023, which contains a known data collection issue.
+For the 2023 data, only April through December interviews in Split 1 were weighted. TBI module responses for January through March should not be used in analysis as they were not properly weighted.`

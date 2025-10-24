@@ -7,7 +7,7 @@ toc: false
 
 ```jsx
 import {GeminiPrompt} from "./components/GeminiPrompt.js";
-display(<GeminiPrompt />);
+display(<GeminiPrompt year="2022" />);
 ```
 
 # SQL Input

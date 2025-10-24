@@ -1,0 +1,2 @@
+export const error2019 = `This data is from 2019, which contains a known error in the survey logic.
+In 2019 the skip logic was programmed incorrectly resulting in Q10 not be asked if someone answered "NO" to Q6. The logic skipped directly to Q11. Per the Comment above, this affects the calculation of "WORST TBI".`
